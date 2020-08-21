@@ -64,5 +64,26 @@ X = torch.empty(size=(1,5)).uniform_(0, 1)
 
 # diagonal matrix with 1's in the diagonal
 X = torch.diag(torch.ones(3))
-print(X)
 
+
+# ================================================================================= #
+# ============= HOW TO INITIALIZE AND CONVERT TENSORS TO OTHER TYPES ============== #
+# ================================================================================= #
+
+tensor = torch.arange(4)
+# convert to boolean
+print(tensor.bool())
+# to int16
+print(tensor.short())
+# to int64
+print(tensor.long())
+# to float16
+print(tensor.half())
+# to float32
+print(tensor.float())
+# to double
+print(tensor.double())
+
+# ================================================================================= #
+# =================== ARRAY TO TENSOR CONVERSION AND VICE-VERSA =================== #
+# ================================================================================= #
