@@ -33,7 +33,7 @@ for i in range(len(text)):
 #########
 # For predicting the next character in the sequence
 # We divide each sentence into
-# Input Data : The las input character should be excluded as it doesn't need to be fed into the model
+# Input Data : The last input character should be excluded as it doesn't need to be fed into the model
 # Target : One time-step ahead of the input data as this will be the 'correct answer'
 #########
 
@@ -58,7 +58,7 @@ for i in range(len(text)):
 #########
 # Before converting them into one-hot vectors we define 3 key variables
 # 1) dict_size : Number of unique characters we have in our text
-# 2) seq_len : Length of sequences we are feeding into the model; maxlengt - 1 as we removed last character input
+# 2) seq_len : Length of sequences we are feeding into the model; maxlength - 1 as we removed last character input
 # 3) batch_size : Number of sentences we are going to feed into our model
 #########
 
@@ -157,7 +157,7 @@ for epoch in range(1, n_epochs + 1):
     if epoch % 10 == 0:
         print(f"Epoch : {epoch}/{n_epochs}")
         print(f"Loss : {loss:.4f}")
-        
+            
 
 ######
 # TESTING
